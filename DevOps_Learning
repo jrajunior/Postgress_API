@@ -1,0 +1,75 @@
+Docker Desktop
+Terraform
+Python (compilador e extensões no VS Code)
+
+Create accounts:
+- Bitbucket
+- Github (check if existent)
+
+
+create a jose.py with a "hello word"
+
+
+Reasearch how to create a docker image for a application in python
+
+
+check how to see the logs of the container
+
+how to access and navigate the container
+
+provision a container with Postgres
+
+
+An API using flask:
+- Receives a post in Json nobody
+- Print on the screen the Json
+
+
+06-Jul
+- Homework: (5 minutes to understand: the differences, the problem being solved, and be able to explain the mechanism [like in a interview])
+- - Rest API vs. SOAP API
+- - - Check standard URL Request Patern
+
+- - Research what is CORS
+
+- - Research about API protection with JWT Token
+
+- - API Contracts and Swagger
+
+
+App:
+- Create a Postgres docker container:
+- - COMMANDS
+
+command to pull the official PostgreSQL Docker image from Docker Hub:
+
+docker pull postgres
+
+Run (create) container named ze-postgres | PAsswd: senha
+
+docker run --name ze-postgres -e POSTGRES_PASSWORD=senha -d postgres
+
+By default, the PostgreSQL container will expose port 5432
+you can map a local port to the container port using the -p flag
+docker run --name ze-postgres -e POSTGRES_PASSWORD=senha -p 5432:5432 -d postgres
+
+
+
+
+- create a table customer | ID (auto_created) | first_name | last_name | email
+- install Postman to act as client so I can test the API
+- my application needs a route /api/customer
+- - get as a reader command: reads the customer table (select *) and returns in a Json file
+- - post to respond (as in, do the thing) with a function to INSERT into the DB: send a no (in the) body Json | first_name | last_name | email
+- - - Star stick if I am able to validade the fields if not NULL: Return success if not null OR Field "x" invalid
+
+- GIT: create a repository on Github
+- - share with Tiago
+- - initiate GIT
+- - update remote (Git in the cloud to push code)
+- - add / commit / push to the cloud
+
+
+
+
+
